@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>AIIMS Hospital | Testpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">AIIMS</span> Hospital</h1>
+        </div>
+        <div class="example">
+          <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a>
+                <ul class="subs">
+                  <li><a href="">Contact us</a></li>
+                  <li><a href="">What we do</a></li>
+              </ul>
+          </li>
+                <li><a href="services.html">Services</a>
+                  <ul class="subs">
+                    <li><a href="">Patient Care</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Research</a></li>
+                    <li><a href="">Developement</a></li>
+                </ul>
+                </li>
+                <li class="current"><a href="registration.html">registration</a>
+                  <ul class="subs">  
+                    <li><a href="">Register</a></li>
+                </ul>
+            </li>
+            <div style="clear:both"></div>
+          </div>
+    </div>
+    </header>  
+    <section id="main">
+    <div class="container">
+      <div id="branding">
+        <article id="main-col"></article>       
+        <div class="container">
+            <form name="myform" method="post" action="login1.html" onsubmit="return validateform()" >  
+               <b>First Name:</b> <input type="text" name="name"><br/>  
+                <b>Password:</b> <input type="password" name="password"><br/>  
+                <input type="submit" value="register">  
+                </form>   
+</div>
+</section>
+<script>
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;    
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+<footer>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  <a href="#" class="fa fa-instagram"></a>
+</footer>
+<footer>
+    <h4>AIIMS Hospital, Copyright &copy; 2020</h4>
+  </footer>
+</body>
+</html>
+
